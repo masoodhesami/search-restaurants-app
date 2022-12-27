@@ -1,32 +1,32 @@
 import { FlatList } from "react-native"
-import CategoryItem from './src/components/CategoryItem';
+import CategoryItem from "../components/CategoryItem"
 
 export default function Category({ term, setTerm }) {
 
     const commonCategories = [
         {
             name: "Burger",
-            imgUrl: require("./src/assets/images/burger.png")
+            imgUrl: require("../assets/images/burger.png")
         },
         {
             name: "Pizza",
-            imgUrl: require("./src/assets/images/pizza.png")
+            imgUrl: require("../assets/images/pizza.png")
         },
         {
             name: "Dessert",
-            imgUrl: require("./src/assets/images/cake.png")
+            imgUrl: require("../assets/images/cake.png")
         },
         {
             name: "Drinks",
-            imgUrl: require("./src/assets/images/smoothies.png")
+            imgUrl: require("../assets/images/smoothies.png")
         },
         {
             name: "Steak",
-            imgUrl: require("./src/assets/images/steak.png")
+            imgUrl: require("../assets/images/steak.png")
         },
         {
             name: "Pasta",
-            imgUrl: require("./src/assets/images/pasta.png")
+            imgUrl: require("../assets/images/pasta.png")
         }
     ]
 

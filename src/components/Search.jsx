@@ -4,7 +4,7 @@ import { useState } from "react"
 export default function Search({ setTerm }) {
     const [input, setInput] = useState("");
 
-    handleEndEditing = () => {
+    const handleEndEditing = () => {
         if (!input) return;
         setTerm(input);
         setInput("");
