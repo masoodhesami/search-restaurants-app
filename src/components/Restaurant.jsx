@@ -1,17 +1,15 @@
 import { useEffect } from "react";
 import { Text, View, StyleSheet } from "react-native";
-import axios from "../api/axios"
+import useRestaurants from "../hooks/useRestaurants";
 
 export default function Restaurant() {
-    const searchRestaurants = async () => {
-        const response = await axios.get('/api/restaurants');
-        console.log(response.data);
-
-    }
+    const [results, searchRestaurants] = useRestaurants()
 
     useEffect(() => {
         searchRestaurants();
-    }, [])
+    }, []);
+
+    console.log(results);
 
     return (
         <View style={styles.container}>
