@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Search from './src/components/Search';
 import Header from './src/components/Header';
 import Category from './src/components/Category';
+import Restaurant from './src/components/Restaurant';
 
 export default function App() {
 
@@ -14,6 +15,7 @@ export default function App() {
       <Header />
       <Search setTerm={setTerm} />
       <Category term={term} setTerm={setTerm} />
+      <Restaurant />
       <StatusBar style="auto" />
     </View>
   );
