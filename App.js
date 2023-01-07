@@ -15,7 +15,7 @@ export default function App() {
       <Header />
       <Search setTerm={setTerm} />
       <Category term={term} setTerm={setTerm} />
-      <Restaurant />
+      <Restaurant term={term} />
       <StatusBar style="auto" />
     </View>
   );

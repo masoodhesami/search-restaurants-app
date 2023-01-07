@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
     },
     container: {
         backgroundColor: "white",
-        height: 100,
         width: "95%",
         alignSelf: "stretch",
         borderRadius: 50,
@@ -44,20 +43,19 @@ const styles = StyleSheet.create({
         height: 75,
         borderRadius: 50,
         marginLeft: 10,
-        marginTop: 20
+        marginTop: 18
     },
     infoContainer: {
         flex: 1,
         paddingHorizontal: 10
     },
     header: {
-        fontSize: 18,
+        fontSize: 16,
         fontWeight: "bold",
-        marginBottom: 4
+        marginBottom: 2
     },
     info: {
-        flexDirection: "row",
-        marginTop: 5
+        flexDirection: "colomn",
     },
     rating: {
         marginRight: 20,
